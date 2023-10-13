@@ -83,9 +83,9 @@ author:
   name             : "Lenard Strahringer"
   avatar           : "profile.png"
   bio              : "PhD Student at Stanford GSB"
-  location         : "Location"
+  location         : "Stanford, California"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : ""
   googlescholar    : "https://scholar.google.de/citations?user=xzofxg4AAAAJ&hl=de"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
