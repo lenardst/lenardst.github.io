@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Information Systems, University of Münster, 2021
+* M.S. in Sociology and Social Research, Utrecht University, 2014
+* Ph.D in Version Control Theory, Stanford Graduate School of Business, 2028 (expected)
 
 Work experience
 ======
