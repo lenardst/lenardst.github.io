@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a first-year PhD student in Organizational Behavior at the [Stanford Graduate School of Business](https://www.gsb.stanford.edu/). 
+I'm a first-year PhD student in Organizational Behavior at the [Stanford Graduate School of Business](https://www.gsb.stanford.edu/). My first research article about how reputation systems change the way we form relationships is forthcoming at Social Psychology Quarterly.
 
 Stay tuned
 ======
