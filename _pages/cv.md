@@ -15,19 +15,19 @@ Education
 * M.S. in Sociology and Social Research, Utrecht University, 2023
 * B.S. in Information Systems, University of Münster, 2021
 
-  Publications
+Publications
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+<ul>{% for post in site.publications %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
 
 <!--  <>Work experience
-[comment]: <>======
-[comment]: <>* Summer 2022: Research Intern
-[comment]: <>  * Utrecht University
+======
+* Summer 2022: Research Intern
+* Utrecht University
 
-[comment]: <>* 2019 - 2022: Research Assistant / TA
-[comment]: <>  * University of Münster
+* 2019 - 2022: Research Assistant / TA
+* University of Münster
   
 Talks
 ======
