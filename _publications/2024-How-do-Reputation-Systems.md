@@ -6,9 +6,8 @@ excerpt: 'With the rise of the platform economy, economic interaction increasing
 date: 2024-08-28
 venue: 'Social Psychology Quarterly'
 paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Strahringer, Lenard & Corten, Rense (Forthcoming). &quot;How do Reputation Systems Affect Commitment and Social Cohesion in Economic Exchange?&quot; <i>Social Psychology Quarterly</i>.'
+citation: 'Strahringer, Lenard & Corten, Rense (Forthcoming). How do Reputation Systems Affect Commitment and Social Cohesion in Economic Exchange? <i>Social Psychology Quarterly</i>.'
 ---
-
 [Working paper](https://github.com/lenardst/lenardst.github.io/blob/master/files/How_Do_Reputation_Systems_Affect_Commitment_and_Social_Cohesion_in_Economic_Exchange_.pdf)
 
 [Data and code](https://github.com/lenardst/cohesion_commitment_economic_exchange)
