@@ -8,6 +8,6 @@ venue: 'European Conference on Information Systems (ECIS)'
 paperurl: 'https://aisel.aisnet.org/ecis2022_rp/109/'
 citation: 'Lansmann, Simon; Strahringer, Lenard; and Pullar, Lisa Julia, "Show Me the Meaning of Working Lonely: Conceptualising the Interrelation between Individual and Collaborative Work" (2022). ECIS 2022 Research Papers. 109.'
 ---
-[Download paper here]([http://academicpages.github.io/files/paper1.pdf](https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1108&context=ecis2022_rp))
+[Download paper here](https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1108&context=ecis2022_rp)
 
 Recommended citation: Lansmann, Simon; Strahringer, Lenard; and Pullar, Lisa Julia, "Show Me the Meaning of Working Lonely: Conceptualising the Interrelation between Individual and Collaborative Work" (2022). ECIS 2022 Research Papers. 109.
