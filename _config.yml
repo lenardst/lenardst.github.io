@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Lenard Strahringer"
-  avatar           : "profile.png"
+  avatar           : "lenard_pb.jpg"
   bio              : "PhD Student at Stanford GSB"
   location         : "Stanford, California"
   employer         :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/strahringer/"
+  linkedin         : "strahringer/"
   orcid            : "https://orcid.org/my-orcid?orcid=0000-0002-6760-1877"
   pinterest        :
   soundcloud       :
