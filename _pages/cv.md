@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * PhD in Organizational Behavior, Stanford Graduate School of Business, 2028 (expected)
-* MS in Sociology and Social Research, Utrecht University, 2023
+* MS in Quantitative Social Sciences, Utrecht University, 2023
 * BS in Information Systems, University of Münster, 2021
 
 Publications
