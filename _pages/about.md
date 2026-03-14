@@ -10,7 +10,7 @@ redirect_from:
 
 I'm a PhD student in Organizational Behavior at the [Stanford Graduate School of Business](https://www.gsb.stanford.edu/).
 
-My primary field of interest is how organizations create effective arrangements for collaboration and learning, and how these affect individual outcomes and firm performance. 
+My research is at the intersection of AI and Organizations. I use natural language processing (NLP) to understand how people coordinate in organizations, including how effective arrangements for collaboration and learning affect individual outcomes and firm performance.
 
 I am also interested in how reputation systems affect social behavior on online platforms. My first [research article](https://journals.sagepub.com/doi/10.1177/01902725241289880) about how reputation systems change the way we form relationships was published in Social Psychology Quarterly.
 
