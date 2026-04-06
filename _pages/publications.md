@@ -11,24 +11,16 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign areas = site.publications | map: 'research_area' | compact | uniq | sort %}
+## Online Platforms for Social Connection
 
-{% for area in areas %}
-## {{ area }}
-
-{% assign area_pubs = site.publications | where: 'research_area', area | sort: 'date' | reverse %}
-{% for post in area_pubs %}
+{% assign platform_pubs = site.publications | where: 'research_area', 'Online Platforms for Social Connection' | sort: 'date' | reverse %}
+{% for post in platform_pubs %}
   {% include archive-single.html %}
 {% endfor %}
 
-{% endfor %}
+## Collaborative Work
 
-{% assign remaining = site.publications | where_exp: 'item', 'item.research_area == nil or item.research_area == ""' | sort: 'date' | reverse %}
-{% if remaining.size > 0 %}
-
-## Other Publications
-
-{% for post in remaining %}
+{% assign other_pubs = site.publications | where: 'research_area', 'Collaborative Work' | sort: 'date' | reverse %}
+{% for post in other_pubs %}
   {% include archive-single.html %}
 {% endfor %}
-{% endif %}
