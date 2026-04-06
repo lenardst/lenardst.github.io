@@ -10,7 +10,7 @@ redirect_from:
 
 I'm a PhD student in Organizational Behavior at the [Stanford Graduate School of Business](https://www.gsb.stanford.edu/).
 
-My research is at the intersection of AI and Organizations. I use natural language processing (NLP) to understand how people coordinate in organizations, including how effective arrangements for collaboration and learning affect individual outcomes and firm performance.
+My research explores how AI and NLP can be used not just to study organizations, but to actively coordinate and manage people within them.
 
 I am also interested in how reputation systems and online platform design affect social behavior. My research in this area includes a [paper in Social Psychology Quarterly](https://journals.sagepub.com/doi/10.1177/01902725241289880) on how reputation systems change relationship formation, and a [working paper](https://arxiv.org/abs/2604.03209) on how generalized reciprocity drives contributor recruitment on Stack Overflow.
 
