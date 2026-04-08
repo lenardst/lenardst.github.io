@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I'm a PhD student in Organizational Behavior at the [Stanford Graduate School of Business](https://www.gsb.stanford.edu/). I am excited about skill-based analyses of people, AI, and organizations.
+I'm a PhD student in Organizational Behavior at the [Stanford Graduate School of Business](https://www.gsb.stanford.edu/).
 
 This summer, I am interning at the [AI for Analytics Team at Google People Analytics](https://rework.withgoogle.com/intl/en/).
 
-My research explores how AI and NLP can be used not just to study organizations, but to actively coordinate and manage people within them.
+My research explores how AI and NLP can be used not just to study organizations, but to actively coordinate and manage people within them. In particular, my work centers on activity and skill-based analyses to better understand people, AI, and organizations.
 
 I am also interested in how reputation systems and online platform design affect social behavior. My research in this area includes a [paper in Social Psychology Quarterly](https://journals.sagepub.com/doi/10.1177/01902725241289880) on how reputation systems change relationship formation, and a [working paper](https://arxiv.org/abs/2604.03209) on how generalized reciprocity drives contributor recruitment on Stack Overflow.
 
