@@ -10,7 +10,7 @@ redirect_from:
 
 I'm a PhD student in Organizational Behavior at the [Stanford Graduate School of Business](https://www.gsb.stanford.edu/), with a Minor in Computer Science.
 
-This summer, I am interning at the [AI for Analytics Team at Google People Analytics](https://rework.withgoogle.com/intl/en/).
+This summer, I am interning at the AI for Analytics Team at [Google People Analytics](https://rework.withgoogle.com/intl/en/).
 
 My research explores how AI and NLP can be used not just to study organizations, but to actively coordinate and manage people within them. In particular, my work centers on activity and skill-based analyses to better understand people, AI, and organizations.
 
