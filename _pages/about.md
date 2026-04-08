@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a PhD student in Organizational Behavior at the [Stanford Graduate School of Business](https://www.gsb.stanford.edu/).
+I'm a PhD student in Organizational Behavior at the [Stanford Graduate School of Business](https://www.gsb.stanford.edu/), with a Minor in Computer Science.
 
 This summer, I am interning at the [AI for Analytics Team at Google People Analytics](https://rework.withgoogle.com/intl/en/).
 
