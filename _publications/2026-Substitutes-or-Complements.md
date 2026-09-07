@@ -10,5 +10,3 @@ paperurl: 'https://osf.io/preprints/socarxiv/wpy8g_v2'
 citation: 'Strahringer, L. (2026). Substitutes or Complements? Role Systems and Culture as Sources of Predictive Knowledge for Coordination. SocArXiv. https://doi.org/10.31235/osf.io/wpy8g_v2.'
 ---
 [Preprint (SocArXiv)](https://osf.io/preprints/socarxiv/wpy8g_v2)
-
-Recommended citation: Strahringer, L. (2026). Substitutes or Complements? Role Systems and Culture as Sources of Predictive Knowledge for Coordination. SocArXiv. https://doi.org/10.31235/osf.io/wpy8g_v2.
