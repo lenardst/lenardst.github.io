@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "Lenard Strahringer"
+hide_title: true
 excerpt: "AI and organizations."
 author_profile: true
 redirect_from:

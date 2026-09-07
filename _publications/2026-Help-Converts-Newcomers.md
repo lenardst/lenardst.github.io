@@ -10,5 +10,3 @@ paperurl: 'https://arxiv.org/abs/2604.03209'
 citation: 'Strahringer, L., Prüß, S. E., & Riemer, K. (2026). Help Converts Newcomers, Not Veterans: Generalized Reciprocity and Platform Engagement on Stack Overflow. arXiv:2604.03209.'
 ---
 [Preprint (arXiv)](https://arxiv.org/abs/2604.03209)
-
-Recommended citation: Strahringer, L., Prüß, S. E., & Riemer, K. (2026). Help Converts Newcomers, Not Veterans: Generalized Reciprocity and Platform Engagement on Stack Overflow. arXiv:2604.03209.

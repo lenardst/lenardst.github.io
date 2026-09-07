@@ -188,14 +188,23 @@ a:hover { color: var(--accent); }
   color: var(--ink-subtle);
 }
 
+/* The theme hides this list behind the Follow button below $large and shows
+   it as a bordered popover. With the button gone the links had no way to
+   open, so the list is always visible and carries no chrome at any width. */
 .author__urls {
+  display: block;
+  position: static;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  z-index: auto;
   font-size: var(--t-meta);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 10px;
 
-  &::before { border-bottom-color: var(--line); }
-  &::after  { border-bottom-color: var(--surface); }
+  &::before,
+  &::after { display: none; }
 
   li { color: var(--ink-subtle); }
   a { color: var(--ink-muted); text-decoration: none; }
@@ -277,4 +286,14 @@ body { padding-bottom: 7em; }
 .page__content > ul,
 .page__content > ol {
   max-width: var(--wrap-text);
+}
+
+/* ---- the paper link on an archive item --------------------------------- */
+
+.archive__item-link {
+  font-size: var(--t-meta);
+  margin-top: 0.5rem;
+
+  a { font-weight: 500; text-decoration: none; }
+  a:hover { text-decoration: underline; }
 }
