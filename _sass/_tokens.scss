@@ -1,0 +1,61 @@
+/* ==========================================================================
+   TOKENS
+   A warm-neutral gray ramp with a single blue accent. The ramps are private:
+   only the semantic names below are used by components, so a palette change
+   happens in exactly one place.
+   ========================================================================== */
+
+:root {
+  /* ramps ------------------------------------------------------------- */
+  --gray-1:  #ffffff;
+  --gray-2:  #f8f8f7;
+  --gray-3:  #f2f2f1;
+  --gray-4:  #ededec;
+  --gray-5:  #e6e6e4;
+  --gray-6:  #e0e0de;
+  --gray-7:  #d4d4d1;
+  --gray-8:  #bcbcb8;
+  --gray-9:  #949390;
+  --gray-10: #81807d;
+  --gray-11: #6e6d6a;
+  --gray-12: #2b2b28;
+
+  --blue-3:  #eaf3fc;
+  --blue-6:  #b6d5f2;
+  --blue-9:  #2383e2;
+  --blue-11: #1668b8;
+
+  /* semantic ---------------------------------------------------------- */
+  --surface:        var(--gray-1);
+  --surface-shell:  var(--gray-2);
+  --surface-muted:  var(--gray-3);
+  --surface-hover:  var(--gray-4);
+
+  --ink:            var(--gray-12);
+  --ink-muted:      var(--gray-11);
+  --ink-subtle:     var(--gray-10);
+  --ink-faint:      var(--gray-9);
+
+  --line-subtle:    var(--gray-5);
+  --line:           var(--gray-6);
+  --line-strong:    var(--gray-7);
+
+  --accent:         var(--blue-9);
+  --accent-text:    var(--blue-11);
+  --accent-surface: var(--blue-3);
+  --accent-line:    var(--blue-6);
+
+  /* type scale -- tracking tightens as size grows; every size is decided
+     here rather than at a call site. ----------------------------------- */
+  --t-hero:    clamp(2.75rem, 6.2vw, 4.5rem);
+  --t-display: clamp(2rem, 4vw, 2.875rem);
+  --t-title:   clamp(1.5rem, 2.6vw, 1.875rem);
+  --t-lead:    clamp(1.125rem, 1.9vw, 1.4375rem);
+  --t-body:    1.0625rem;
+  --t-meta:    0.9375rem;
+  --t-micro:   0.75rem;
+
+  /* measure ----------------------------------------------------------- */
+  --wrap:      68rem;
+  --wrap-text: 36rem;
+}
