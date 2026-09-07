@@ -259,3 +259,22 @@ body { padding-bottom: 7em; }
   color: var(--ink);
   border-bottom: 1px solid var(--line-subtle);
 }
+
+/* ---- the opening line of the home page --------------------------------- */
+
+.page__content .page__lead {
+  font-size: var(--t-lead);
+  font-weight: 400;
+  letter-spacing: -0.018em;
+  line-height: 1.36;
+  color: var(--ink);
+  max-width: 32ch;
+  margin: 0 0 2rem;
+}
+
+/* Body copy on the article pages wants a measure, not the full column. */
+.page__content > p,
+.page__content > ul,
+.page__content > ol {
+  max-width: var(--wrap-text);
+}

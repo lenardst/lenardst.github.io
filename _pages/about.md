@@ -1,29 +1,22 @@
 ---
-layout: founder
 permalink: /
 title: "Lenard Strahringer"
-excerpt: "Designing the firm of the future — how AI changes the way companies coordinate, and what to build so it changes them for the better."
+excerpt: "I work on how AI changes the way companies coordinate — and what to build so it changes them for the better."
+author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-<section class="fx__intro">
-  <p class="fx__eyebrow">Lenard Strahringer</p>
-  <h1 class="fx__hero">Designing the firm of the future.</h1>
-  <p class="fx__lead">How AI changes the way companies coordinate — and what to build so it changes them for the better.</p>
-</section>
+I work on how AI changes the way companies coordinate — and what to build so it changes them for the better.
+{: .page__lead}
 
-<section>
-  <div class="fx__prose">
-    <p>Every company runs on knowledge of its own work: who is doing what, what has already been decided, what happens next. Almost none of it is written down. Organizations have spent a century compensating with structure — roles, hierarchy, process — which buys predictability at exactly the cost of being able to change.</p>
+Most of what a company knows about its own work — who is doing what, what has already been decided, what happens next — is never written down. Organizations have spent a century compensating for that with structure: roles, hierarchy, process. It buys predictability at exactly the cost of being able to change.
 
-    <p>AI changes the terms of that trade. Companies now emit a continuous digital trace of their own coordination, and language models can finally read it at the scale it is produced. The model of the organization that used to live in people's heads can be built from what the company already does, kept current, and acted on — by humans and by agents.</p>
-  </div>
+AI changes the terms of that trade. Companies now emit a continuous digital trace of their own coordination, and language models can finally read it at the scale it is produced. The model of an organization that used to live in people's heads can be built from what the company already does, kept current, and acted on — by people and by agents. That is the firm of the future worth building: not flatter or faster, but one that actually knows what it is doing.
 
-  <ul class="fx__links">
-    <li><a class="fx__link" href="mailto:lenardst@stanford.edu">Email</a></li>
-    <li><a class="fx__link" href="https://www.linkedin.com/in/strahringer/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-    <li><a class="fx__link" href="https://github.com/lenardst" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-  </ul>
-</section>
+I'm finishing a PhD in Organizational Behavior at the <a href="https://www.gsb.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford Graduate School of Business</a>, with a minor in Computer Science. Before Stanford I started and sold a small company, and I've since built ML and LLM systems in production — most recently on AI for people analytics at Google.
+
+The argument above is not a hunch. I've spent six years testing it: field experiments, LLM pipelines, and causal inference on millions of real interactions inside teams and on platforms. That work lives on the [research]({{ base_path }}/publications/) page.
+
+Reach me at <a href="mailto:lenardst@stanford.edu">lenardst@stanford.edu</a>.
