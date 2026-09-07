@@ -6,6 +6,11 @@ author_profile: true
 redirect_from:
   - /about/
   - /about.html
+  - /cv/
+  - /cv.html
+  - /resume
+  - /resume/
+  - /resume.html
 ---
 
 I work on how AI changes the way companies coordinate — and what to build so it changes them for the better.
