@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Lenard Strahringer"
 title_separator          : "-"
 name                     : &name "Lenard Strahringer"
-description              : &description "AI and organization design."
+description              : &description "AI and organizations."
 url                      : https://lenardst.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "lenardst/lenardst.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Lenard Strahringer"
   avatar           : "lenard_pb.jpg"
-  bio              : "AI and organization design."
+  bio              : "AI and organizations."
   location         : "Stanford, California"
   employer         :
   pubmed           : 

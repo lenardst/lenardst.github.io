@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Lenard Strahringer"
-excerpt: "AI and organization design."
+excerpt: "AI and organizations."
 author_profile: true
 redirect_from:
   - /about/
@@ -13,10 +13,10 @@ redirect_from:
   - /resume.html
 ---
 
-I work on AI and organization design — how companies coordinate, and what that should look like as AI changes the work.
+I work on designing the firm of the future.
 {: .page__lead}
 
-I'm finishing a PhD in Organizational Behavior at the <a href="https://www.gsb.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford Graduate School of Business</a>, with a minor in Computer Science. Before Stanford I started and sold a small company; since then I've built ML and LLM systems in production, most recently at Google.
+I'm finishing a PhD in Organizational Behavior at the <a href="https://www.gsb.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford Graduate School of Business</a>, with a minor in Computer Science. I've built tools and products for research and for users with ML and LLMs at Stanford, Google, and several startups.
 
 My academic work is on the [research]({{ base_path }}/publications/) page.
 
