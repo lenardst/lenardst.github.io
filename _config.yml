@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Lenard Strahringer"
 title_separator          : "-"
 name                     : &name "Lenard Strahringer"
-description              : &description "PhD student at Stanford GSB researching how AI can help us organize better and design the firm of the future."
+description              : &description "Designing the firm of the future — how AI changes the way companies coordinate, and what to build so it changes them for the better."
 url                      : https://lenardst.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "lenardst/lenardst.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Lenard Strahringer"
   avatar           : "lenard_pb.jpg"
-  bio              : "PhD Student at Stanford GSB"
+  bio              : "Applied AI and ML for how organizations coordinate."
   location         : "Stanford, California"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.de/citations?user=xzofxg4AAAAJ&hl=de"
-  email            :
+  email            : "lenardst@stanford.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

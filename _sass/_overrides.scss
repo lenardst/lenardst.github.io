@@ -1,0 +1,261 @@
+/* ==========================================================================
+   OVERRIDES
+   Pulls the theme's own chrome onto the token system so the archive pages
+   and the founder pages read as one site. Imported last, on purpose.
+   ========================================================================== */
+
+body {
+  background-color: var(--surface);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.006em;
+}
+
+/* -- masthead --------------------------------------------------------- */
+
+.masthead {
+  border-bottom: 1px solid var(--line-subtle);
+  background: var(--surface);
+
+  &__inner-wrap {
+    max-width: var(--wrap);
+    padding: 1.35rem 1.5rem;
+
+    @include breakpoint($x-large) { max-width: var(--wrap); }
+  }
+}
+
+.masthead__menu-item {
+  font-size: var(--t-meta);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--ink-muted);
+
+  a { color: var(--ink-muted); }
+  a:hover { color: var(--ink); }
+
+  &--lg a {
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.018em;
+  }
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a { color: var(--ink-muted); }
+
+  .visible-links a::before { background: var(--accent); }
+
+  button {
+    background-color: var(--ink);
+    .navicon,
+    .navicon::before,
+    .navicon::after { background: var(--surface); }
+  }
+
+  .hidden-links {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: 0 6px 24px rgba(43, 43, 40, 0.08);
+
+    &::before { border-bottom-color: var(--line); }
+    &::after  { border-bottom-color: var(--surface); }
+    a:hover { color: var(--ink); }
+  }
+}
+
+/* -- page shell ------------------------------------------------------- */
+
+#main {
+  max-width: var(--wrap);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 3.5rem;
+
+  @include breakpoint($x-large) { max-width: var(--wrap); }
+}
+
+.page__title {
+  font-size: var(--t-display);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.page__content {
+  h2 {
+    font-size: var(--t-title);
+    font-weight: 600;
+    letter-spacing: -0.022em;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line-subtle);
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+
+  p, li {
+    font-size: var(--t-body);
+    line-height: 1.62;
+    color: var(--ink-muted);
+  }
+}
+
+a {
+  color: var(--accent-text);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--accent); }
+
+/* -- archive lists (publications) ------------------------------------- */
+
+.archive__item-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+
+  a { color: var(--ink); }
+  a:hover { color: var(--accent-text); }
+}
+
+.archive__item-excerpt {
+  font-size: var(--t-meta);
+  line-height: 1.55;
+  color: var(--ink-subtle);
+}
+
+.page__meta,
+.archive__item-meta { color: var(--ink-faint); }
+
+/* -- footer ----------------------------------------------------------- */
+
+.page__footer {
+  background-color: var(--surface-shell);
+  border-top: 1px solid var(--line-subtle);
+  color: var(--ink-subtle);
+
+  footer {
+    max-width: var(--wrap);
+    padding: 0 1.5rem 2rem;
+
+    @include breakpoint($x-large) { max-width: var(--wrap); }
+  }
+
+  a { color: var(--ink-subtle); }
+  a:hover { color: var(--ink); }
+}
+
+.page__footer-copyright,
+.page__footer-follow {
+  font-size: var(--t-micro);
+  letter-spacing: 0;
+}
+
+/* -- the theme's academic sidebar ---------------------------------------
+   Kept on the archive pages, but stripped of the parts that read as a
+   researcher profile card: the Follow button has nothing to follow. */
+
+.author__urls-wrapper .btn { display: none; }
+
+.author__avatar img {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  max-width: 140px;
+}
+
+.author__name {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.author__bio {
+  font-size: var(--t-meta);
+  color: var(--ink-subtle);
+}
+
+.author__urls {
+  font-size: var(--t-meta);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+
+  &::before { border-bottom-color: var(--line); }
+  &::after  { border-bottom-color: var(--surface); }
+
+  li { color: var(--ink-subtle); }
+  a { color: var(--ink-muted); text-decoration: none; }
+  a:hover { color: var(--ink); }
+}
+
+/* ---- the site footer -------------------------------------------------- */
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line-subtle);
+}
+
+.site-footer__name {
+  font-size: var(--t-meta);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+  letter-spacing: -0.012em;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--t-meta);
+
+  a { text-decoration: none; }
+}
+
+.site-footer__copyright {
+  margin: 0 0 0 auto;
+  font-size: var(--t-micro);
+  color: var(--ink-faint);
+  letter-spacing: 0;
+}
+
+/* The theme's sticky-footer reservation was sized for the old three-block
+   footer; the new one is a single row. */
+body { padding-bottom: 7em; }
+
+/* ---- archive item links ----------------------------------------------- */
+
+.archive__item-title a {
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+}
+
+.page__content .archive__subtitle {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line-subtle);
+}

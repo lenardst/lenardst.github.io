@@ -5,11 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
 {% include base_path %}
+
+Peer-reviewed articles, preprints, and conference papers. For the argument these
+add up to, see the [research overview]({{ base_path }}/research/).
+{% if author.googlescholar %}Also on <a href="{{ author.googlescholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>.{% endif %}
 
 ## Collaborative Work
 

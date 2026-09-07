@@ -1,0 +1,346 @@
+/* ==========================================================================
+   FOUNDER LAYOUT
+   Everything the marketing-side pages need. Namespaced under .fx so the
+   theme's own article styles are left alone on the archive pages.
+   ========================================================================== */
+
+.fx {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 1.5rem 6rem;
+  animation: intro 0.3s both;
+  animation-delay: 0.35s;
+
+  /* Sections are separated by air, not by rules. A rule appears only where
+     it is doing work: inside a list, between rows. */
+  > section {
+    margin-top: 5.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+/* -- type roles ------------------------------------------------------- */
+
+.fx__eyebrow {
+  font-size: var(--t-micro);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0 0 1.25rem;
+}
+
+.fx__hero {
+  font-size: var(--t-hero);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  color: var(--ink);
+  margin: 0;
+  max-width: 16ch;
+}
+
+.fx__display {
+  font-size: var(--t-display);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 0;
+  max-width: 22ch;
+}
+
+.fx__title {
+  font-size: var(--t-title);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.16;
+  color: var(--ink);
+  margin: 0 0 1.75rem;
+  max-width: 26ch;
+}
+
+.fx__lead {
+  font-size: var(--t-lead);
+  font-weight: 400;
+  letter-spacing: -0.018em;
+  line-height: 1.36;
+  color: var(--ink-muted);
+  margin: 1.5rem 0 0;
+  max-width: 34ch;
+}
+
+.fx__prose {
+  max-width: var(--wrap-text);
+
+  p {
+    font-size: var(--t-body);
+    line-height: 1.62;
+    color: var(--ink-muted);
+    margin: 0 0 1.25rem;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  strong,
+  b {
+    color: var(--ink);
+    font-weight: 600;
+  }
+}
+
+.fx__note {
+  font-size: var(--t-meta);
+  line-height: 1.55;
+  color: var(--ink-subtle);
+  max-width: var(--wrap-text);
+  margin: 0;
+}
+
+/* -- the opening block ------------------------------------------------ */
+
+.fx__intro {
+  padding: 4.5rem 0 0;
+
+  @include breakpoint($medium) {
+    padding-top: 6rem;
+  }
+}
+
+/* -- numbered list -- the three-problems block ------------------------- */
+
+.fx__steps {
+  counter-reset: step;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    border-top: 1px solid var(--line-subtle);
+    padding: 1.6rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.75rem;
+    align-items: baseline;
+
+    @include breakpoint($medium) {
+      grid-template-columns: 3.25rem 1fr;
+    }
+
+    &:last-child { border-bottom: 1px solid var(--line-subtle); }
+
+    &::before {
+      counter-increment: step;
+      content: counter(step, decimal-leading-zero);
+      font-size: var(--t-meta);
+      font-weight: 600;
+      color: var(--ink-faint);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.04em;
+      display: block;
+      margin-bottom: 0.4rem;
+
+      @include breakpoint($medium) { margin-bottom: 0; }
+    }
+  }
+}
+
+.fx__step-head {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.012em;
+  line-height: 1.3;
+}
+
+.fx__step-sub {
+  font-size: var(--t-meta);
+  color: var(--ink-subtle);
+  margin: 0.45rem 0 0;
+  line-height: 1.55;
+  max-width: 58ch;
+}
+
+/* -- hairline rows -- background, selected work ------------------------ */
+
+.fx__rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    border-top: 1px solid var(--line-subtle);
+    padding: 1.5rem 0;
+
+    &:last-child { border-bottom: 1px solid var(--line-subtle); }
+  }
+}
+
+.fx__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 1.75rem;
+  row-gap: 0.35rem;
+  align-items: baseline;
+
+  @include breakpoint($medium) {
+    grid-template-columns: 1fr 1.55fr 8.5rem;
+  }
+}
+
+.fx__row-name {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.012em;
+}
+
+.fx__row-body {
+  font-size: var(--t-meta);
+  color: var(--ink-muted);
+  line-height: 1.55;
+}
+
+.fx__row-when {
+  font-size: var(--t-meta);
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+
+  @include breakpoint($medium) { text-align: right; }
+}
+
+/* -- work entries ----------------------------------------------------- */
+
+.fx__entry {
+  border-top: 1px solid var(--line-subtle);
+  padding: 2rem 0;
+
+  &:last-of-type { border-bottom: 1px solid var(--line-subtle); }
+}
+
+.fx__entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.fx__entry-name {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+.fx__entry-scale {
+  font-size: var(--t-meta);
+  color: var(--accent-text);
+  font-weight: 500;
+}
+
+.fx__entry-body {
+  font-size: var(--t-body);
+  line-height: 1.6;
+  color: var(--ink-muted);
+  margin: 0;
+  max-width: 62ch;
+}
+
+.fx__entry-stack {
+  font-size: var(--t-meta);
+  color: var(--ink-faint);
+  margin: 0.85rem 0 0;
+  line-height: 1.5;
+}
+
+/* -- chips ------------------------------------------------------------ */
+
+.fx__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.75rem;
+    border-radius: 7px;
+    border: 1px solid var(--line);
+    background: var(--surface-muted);
+    color: var(--ink-muted);
+    font-size: var(--t-meta);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* -- links out -------------------------------------------------------- */
+
+.fx__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fx__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink) !important;
+  font-size: var(--t-meta);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-decoration: none !important;
+  transition: $global-transition;
+
+  &:hover {
+    border-color: var(--line-strong);
+    background: var(--surface-muted);
+  }
+
+  &--accent {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: #fff !important;
+
+    &:hover {
+      border-color: var(--accent-text);
+      background: var(--accent-text);
+    }
+  }
+}
+
+/* -- a quiet pointer to the next page --------------------------------- */
+
+.fx__next {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+  font-size: var(--t-meta);
+  font-weight: 500;
+  color: var(--accent-text) !important;
+  text-decoration: none !important;
+
+  &::after {
+    content: "\2192";
+    transition: $global-transition;
+  }
+
+  &:hover::after { transform: translateX(2px); }
+}
