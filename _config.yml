@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Lenard Strahringer"
 title_separator          : "-"
 name                     : &name "Lenard Strahringer"
-description              : &description "Designing the firm of the future — how AI changes the way companies coordinate, and what to build so it changes them for the better."
+description              : &description "AI and organization design."
 url                      : https://lenardst.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "lenardst/lenardst.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Lenard Strahringer"
   avatar           : "lenard_pb.jpg"
-  bio              : "Applied AI and ML for how organizations coordinate."
+  bio              : "AI and organization design."
   location         : "Stanford, California"
   employer         :
   pubmed           : 
