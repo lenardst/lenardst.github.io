@@ -2,20 +2,5 @@
 
 <div class="site-footer">
   <p class="site-footer__name">{{ site.author.name }}</p>
-  <ul class="site-footer__links">
-    {% if site.author.email %}
-      <li><a href="mailto:{{ site.author.email }}">Email</a></li>
-    {% endif %}
-    {% if site.author.linkedin %}
-      <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-    {% endif %}
-    {% if site.author.googlescholar %}
-      <li><a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">Scholar</a></li>
-    {% endif %}
-    <li><a href="{{ base_path }}/sitemap/">Sitemap</a></li>
-  </ul>
-  <p class="site-footer__copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</p>
+  <p class="site-footer__copyright">&copy; {{ site.time | date: '%Y' }}</p>
 </div>
