@@ -27,7 +27,9 @@
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
+      {% if post.collection == 'publications' and post.paperurl %}
+        <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ title }}</a>
+      {% elsif post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
@@ -64,6 +66,9 @@
           <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">Read the preprint</a>
         {% else %}
           <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">Read the paper</a>
+        {% endif %}
+        {% if post.codeurl %}
+          &middot; <a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer">Replication package</a>
         {% endif %}
       </p>
     {% endif %}

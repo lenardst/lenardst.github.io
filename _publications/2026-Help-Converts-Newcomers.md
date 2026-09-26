@@ -7,6 +7,7 @@ excerpt: "Whether people who receive help online go on to help others is an open
 date: 2026-04-03
 venue: 'Computers in Human Behavior'
 paperurl: 'https://doi.org/10.1016/j.chb.2026.109193'
+codeurl: 'https://github.com/lenardst/generalized-reciprocity-stackoverflow'
 citation: 'Strahringer, L., Prüß, S. E., & Riemer, K. (2026). Help Converts Newcomers, Not Veterans: Generalized Reciprocity and Platform Engagement on Stack Overflow. <i>Computers in Human Behavior</i>. https://doi.org/10.1016/j.chb.2026.109193.'
 ---
 [Article](https://doi.org/10.1016/j.chb.2026.109193)
