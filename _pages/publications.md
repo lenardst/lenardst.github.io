@@ -7,8 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-Peer-reviewed articles, preprints, and conference papers on coordination,
-organization design, and online platforms.
 {% if author.googlescholar %}Also on <a href="{{ author.googlescholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>.{% endif %}
 
 ## Collaborative Work
