@@ -118,6 +118,9 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
+      {% if author.chesscom %}
+        <li><a href="https://www.chess.com/member/{{ author.chesscom }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-chess-knight" aria-hidden="true"></i> Chess.com</a></li>
+      {% endif %}
     </ul>
   </div>
 </div>
