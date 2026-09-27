@@ -21,7 +21,10 @@
   --gray-12: #ece9df;
 
   --yellow-3:  #231d08;
+  --yellow-5:  #493b18;
   --yellow-6:  #6b5415;
+  --yellow-7:  #79601b;
+  --yellow-8:  #b28d21;
   --yellow-9:  #f5c542;
   --yellow-11: #ffd966;
 
@@ -45,6 +48,14 @@
   --accent-hover:   var(--yellow-11);
   --accent-surface: var(--yellow-3);
   --accent-line:    var(--yellow-6);
+
+  /* GitHub contribution levels, no activity to busiest: evenly spaced in
+     OKLCH lightness from the empty cell up to the accent */
+  --heat-0:         var(--gray-5);
+  --heat-1:         var(--yellow-5);
+  --heat-2:         var(--yellow-7);
+  --heat-3:         var(--yellow-8);
+  --heat-4:         var(--yellow-9);
 
   /* the faint blueprint grid behind every page */
   --grid-line:      rgba(236, 233, 223, 0.035);
