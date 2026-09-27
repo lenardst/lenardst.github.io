@@ -81,8 +81,8 @@ analytics:
 # Site Author
 author:
   name             : "Lenard Strahringer"
+  avatar           : "lenard_pb.jpg"
   bio              :
-  bio              : "AI and organizations."
   location         : "Stanford, California"
   employer         :
   pubmed           : 
@@ -91,6 +91,7 @@ author:
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
+  chesscom         : "lenardsknightmate" # Chess.com username
   codepen          :
   dribbble         :
   flickr           :

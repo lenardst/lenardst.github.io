@@ -1,0 +1,37 @@
+{%- comment -%}
+  The GitHub contribution calendar: one column per week, one cell per day,
+  shaded by GitHub's own contribution level. It reads
+  _data/github_activity.json, which .github/workflows/github-activity.yml
+  refreshes daily, and renders nothing until that file exists. A title
+  parameter opens the section with a heading.
+{%- endcomment -%}
+{%- assign activity = site.data.github_activity -%}
+{%- if activity.days.size > 0 -%}
+{%- assign first_day = activity.days.first -%}
+{%- assign last_day = activity.days.last -%}
+{%- comment -%} Columns start on Sunday, so a first day later in the week starts that far down. {%- endcomment -%}
+{%- assign lead = first_day.date | date: "%w" | plus: 0 -%}
+{%- assign weeks = activity.days.size | plus: lead | plus: 6 | divided_by: 7 -%}
+{%- if activity.total >= 1000 -%}
+  {%- assign thousands = activity.total | divided_by: 1000 -%}
+  {%- assign hundreds = activity.total | modulo: 1000 | prepend: "00" | slice: -3, 3 -%}
+  {%- capture total -%}{{ thousands }},{{ hundreds }}{%- endcapture -%}
+{%- else -%}
+  {%- assign total = activity.total -%}
+{%- endif -%}
+{%- if include.title %}
+<h2 id="github-activity">{{ include.title }}</h2>
+{%- endif %}
+<figure class="gh-activity">
+<svg class="gh-activity__calendar" viewBox="0 0 {{ weeks | times: 13 | minus: 3 }} 88" role="img" aria-label="{{ total }} GitHub contributions between {{ first_day.date | date: '%B %-d, %Y' }} and {{ last_day.date | date: '%B %-d, %Y' }}">
+{%- for day in activity.days -%}
+{%- assign n = forloop.index0 | plus: lead -%}
+<rect class="l{{ day.level }}" x="{{ n | divided_by: 7 | times: 13 }}" y="{{ n | modulo: 7 | times: 13 }}" width="10" height="10"><title>{% if day.count == 0 %}No contributions{% elsif day.count == 1 %}1 contribution{% else %}{{ day.count }} contributions{% endif %} on {{ day.date | date: "%b %-d, %Y" }}</title></rect>
+{%- endfor -%}
+</svg>
+<figcaption class="gh-activity__caption">
+<span><strong>{{ total }}</strong> contributions in the last year</span>
+<a href="https://github.com/{{ activity.login }}">github.com/{{ activity.login }}</a>
+</figcaption>
+</figure>
+{%- endif -%}

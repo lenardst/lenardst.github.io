@@ -607,3 +607,56 @@ body { padding-bottom: 7em; }
   border-color: var(--line);
   &:hover { background: transparent; color: var(--ink-faint); border-color: var(--line); }
 }
+
+/* ---- GitHub activity on the home page ---------------------------------- */
+
+/* The contribution calendar is one more readout on the console: quiet days
+   sit on the grid as faint cells and busy days climb the yellow ramp toward
+   the accent. It is an SVG sized by its viewBox, so the whole year scales
+   with the column instead of overflowing it on a phone. */
+.gh-activity {
+  display: block; /* the theme lays figures out as a flex row */
+  margin: 0;
+}
+
+.gh-activity__calendar {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible; /* keep the hover outline on edge cells */
+
+  rect { fill: var(--heat-0); }
+  .l1  { fill: var(--heat-1); }
+  .l2  { fill: var(--heat-2); }
+  .l3  { fill: var(--heat-3); }
+  .l4  { fill: var(--heat-4); }
+
+  rect:hover {
+    stroke: var(--ink);
+    stroke-width: 1.5;
+  }
+}
+
+.gh-activity__caption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  margin: 1rem 0 0;
+  @include mono-label;
+  color: var(--ink-faint);
+
+  strong {
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  a {
+    color: var(--accent-text);
+    text-decoration: none;
+    border-bottom: 0;
+
+    &::after { content: " \2192"; }
+    &:hover { color: var(--accent-hover); }
+  }
+}

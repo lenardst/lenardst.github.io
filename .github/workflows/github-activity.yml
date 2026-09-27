@@ -1,0 +1,71 @@
+name: GitHub activity
+
+# Refreshes _data/github_activity.json, the contribution calendar drawn on
+# the home page, from GitHub's GraphQL API. Runs every day and whenever this
+# file changes; a push to master rebuilds the Pages site with the new data.
+on:
+  schedule:
+    - cron: "23 7 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["**"]
+    paths: [".github/workflows/github-activity.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-activity-${{ github.ref }}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Fetch the contribution calendar
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LOGIN: ${{ github.repository_owner }}
+        run: |
+          gh api graphql -f login="$LOGIN" -f query='
+            query($login: String!) {
+              user(login: $login) {
+                contributionsCollection {
+                  contributionCalendar {
+                    totalContributions
+                    weeks { contributionDays { date contributionCount contributionLevel } }
+                  }
+                }
+              }
+            }' > "$RUNNER_TEMP/calendar.json"
+
+          # Keep the day, its count and GitHub's 0-4 shade; refuse to replace
+          # the data with a calendar that came back empty or cut short.
+          jq --arg login "$LOGIN" '
+            .data.user.contributionsCollection.contributionCalendar
+            | {
+                login: $login,
+                total: .totalContributions,
+                days: [.weeks[].contributionDays[] | {
+                  date,
+                  count: .contributionCount,
+                  level: {NONE: 0, FIRST_QUARTILE: 1, SECOND_QUARTILE: 2, THIRD_QUARTILE: 3, FOURTH_QUARTILE: 4}[.contributionLevel]
+                }]
+              }
+            | if (.days | length) < 360 then error("calendar has only \(.days | length) days") else . end
+          ' "$RUNNER_TEMP/calendar.json" > "$RUNNER_TEMP/github_activity.json"
+          mv "$RUNNER_TEMP/github_activity.json" _data/github_activity.json
+
+      - name: Commit the refreshed data
+        run: |
+          git add _data/github_activity.json
+          if git diff --cached --quiet; then
+            echo "Calendar unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh GitHub activity"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"

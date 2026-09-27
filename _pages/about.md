@@ -22,3 +22,5 @@ I'm finishing a PhD in Organizational Behavior at the <a href="https://www.gsb.s
 My academic work is on the [research]({{ base_path }}/publications/) page.
 
 Reach me at <a href="mailto:lenardst@stanford.edu">lenardst@stanford.edu</a>.
+
+{% include github-activity.html title="Code" %}
