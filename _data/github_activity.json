@@ -1,6 +1,6 @@
 {
   "login": "lenardst",
-  "total": 2856,
+  "total": 2890,
   "days": [
     {
       "date": "2025-11-09",
@@ -1834,18 +1834,23 @@
     },
     {
       "date": "2026-11-10",
-      "count": 51,
+      "count": 50,
       "level": 4
     },
     {
       "date": "2026-11-11",
-      "count": 29,
+      "count": 27,
       "level": 3
     },
     {
       "date": "2026-11-12",
-      "count": 0,
-      "level": 0
+      "count": 30,
+      "level": 3
+    },
+    {
+      "date": "2026-11-13",
+      "count": 7,
+      "level": 1
     }
   ]
 }
